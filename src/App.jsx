@@ -5,7 +5,7 @@ import './App.css'
 import {
   SUBJECTS_DEFAULT_INITIAL_VALUE,
   SUBJECTS_LOCAL_STORAGE_KEY,
-} from "../components/utilities/constants.js"
+} from "../components/utilities/constants"
 import { SubjectsContext } from '../hooks/useSubject';
 
 

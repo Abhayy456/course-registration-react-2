@@ -1,5 +1,5 @@
-import { AddSubjectFormContainer } from "../components/AddSubjectFormContainer";
-import { AddSubjectHeader } from "../components/AddSubjectHeader";
+import { AddSubjectFormContainer } from "../components/addSubject/AddSubjectFormContainer";
+import { AddSubjectHeader } from "../components/addSubject/AddSubjectHeader";
 
 export function AddSubject() {
   return (

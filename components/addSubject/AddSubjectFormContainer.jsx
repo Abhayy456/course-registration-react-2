@@ -1,5 +1,5 @@
 import { useReducer, useCallback } from "react";
-import { useSubject } from "../hooks/useSubject";
+import { useSubject } from "../../hooks/useSubject.js";
 import { subjectReducer } from "./reducer.js";
 
 import {
