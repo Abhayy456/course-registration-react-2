@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 // import React from "react";
 // import { Subjects } from "../subjects/Subjects";
+
 import "./NavBar.css"
 
 export const NavBar = () => {
