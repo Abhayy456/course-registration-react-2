@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import { Subjects } from "../subjects/Subjects";
+// import React from "react";
+// import { Subjects } from "../subjects/Subjects";
 import "./NavBar.css"
 
 export const NavBar = () => {
@@ -14,7 +14,7 @@ export const NavBar = () => {
                         placeholder="Search Subjects"
                         aria-label="Search Bar"
                     />
-                    <button class="nav__search-button">
+                    <button className="nav__search-button">
                         Search
                     </button>
                 </div>

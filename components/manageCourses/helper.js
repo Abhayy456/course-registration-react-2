@@ -1,5 +1,5 @@
-import { initializeRegistered, register } from "../courses/helper";
-import { RegisteredContext } from "../../hooks/useRegistered";
+import { initializeRegistered } from "../courses/helper";
+// import { RegisteredContext } from "../../hooks/useRegistered";
 export const drop = (subject) => {
     const registered=initializeRegistered();
     let index=0;

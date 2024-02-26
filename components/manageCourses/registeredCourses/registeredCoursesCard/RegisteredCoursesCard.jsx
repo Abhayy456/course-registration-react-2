@@ -1,9 +1,11 @@
+/* eslint-disable react/prop-types */
+// eslint-disable-next-line react/prop-types
 import { drop } from "../../helper.js"
 import { RegisteredContext } from "../../../../hooks/useRegistered.js";
 import { useContext } from "react";
 import "./RegisteredCoursesCard.css";
 export const RegisteredCoursesCard = ({ subject }) => {
-    const [registered, setRegistered] = useContext(RegisteredContext);
+    const [, setRegistered] = useContext(RegisteredContext);
     const handleDrop = () => {
         const registeredNew=drop(subject);
         // {handle};
@@ -13,6 +15,7 @@ export const RegisteredCoursesCard = ({ subject }) => {
     return (
         <div className="registered-course">
             <div className="registered-course__name">
+                
                 {subject.name}
             </div>
             <div className="registered-course__branch">

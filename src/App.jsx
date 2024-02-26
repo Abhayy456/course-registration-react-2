@@ -1,7 +1,7 @@
 
 import { useLocalStorage } from '../hooks/useLocalStorage'
-import { AddSubject } from '../pages/AddSubject'
-import { Home } from '../pages/Home';
+// import { AddSubject } from '../pages/AddSubject'
+// import { Home } from '../pages/Home';
 import { Outlet } from 'react-router';
 import './App.css'
 import {
@@ -9,7 +9,7 @@ import {
   SUBJECTS_LOCAL_STORAGE_KEY,
 } from "../components/utilities/constants"
 import { SubjectsContext } from '../hooks/useSubject';
-import { Route, Routes } from 'react-router-dom';
+// import { Route, Routes } from 'react-router-dom';
 import { initializeRegistered } from '../components/courses/helper.js';
 import { RegisteredContext } from '../hooks/useRegistered';
 import { useState } from 'react';
