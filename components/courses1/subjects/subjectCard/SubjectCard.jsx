@@ -1,6 +1,6 @@
 import "./SubjectCard.css";
 import { register } from "../../helper.js";
-import { RegisteredContext } from "../../../../hooks/useRegistered";
+import { RegisteredContext } from "../../../../hooks/useRegistered.js";
 import { useContext } from "react";
 
 export const SubjectCard = ({ subject }) => {
