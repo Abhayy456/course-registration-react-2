@@ -1,0 +1,35 @@
+.subjects-list{
+    display:flex;
+    flex-direction: column;
+    gap: 1px;
+    width: 100%;
+}
+
+.subjects-list__header{
+    display: flex;
+    border: solid black;
+    border-radius: 0.8rem;
+    height: 5rem;
+    align-items: center;
+    font-size: 1.5rem;
+    background-color: white;
+    margin-top: 1rem;
+}
+
+.subjects-list__header-branch-column{
+    width: 20%;
+}
+
+.subjects-list__header-name-column{
+    padding-left: 2rem;
+    width: 20%;
+}
+
+.subjects-list__header-code-column{
+    width: 20%;
+}
+
+.subjects-list__header-credits-column{
+    width: 20%;
+}
+

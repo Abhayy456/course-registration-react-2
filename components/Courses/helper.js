@@ -18,9 +18,9 @@ export const fetchSubjects = () => {
 export const register = (subject) => {
     const registered=initializeRegistered();
     console.log({registered});
-    // console.log({totalCredits});
     const alreadyRegistered=registered.find((alreadyRegistered) => alreadyRegistered.id === subject.subjectId);
     let copy = [];
+
     if(alreadyRegistered) {
         alert("Subject Already Registered!");
     }
@@ -37,19 +37,22 @@ export const register = (subject) => {
         map1.set(subject.subjectId, {
             subjectCredits: subject.subjectCredits,
         })
+        alert("Subject Registered!");
         console.log({map1});
     }
+
     copy = [...copy, ...registered];
     window.localStorage.setItem("registered", JSON.stringify(copy));
-    // window.localStorage.setItem("totalCredits", JSON.stringify(copy));
+
     const registeredNew = initializeRegistered();
-    console.log({registeredNew});
+
     let totalCredits=0;
     {registeredNew.map((subject) => {
         console.log(subject.id);
         totalCredits+=Number(map1.get(subject.id).subjectCredits);
 
     })}
+    
     window.localStorage.setItem("totalCredits", JSON.stringify(totalCredits));
     window.localStorage.setItem("map1",JSON.stringify(map1));
     return copy;

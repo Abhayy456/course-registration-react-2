@@ -1,7 +1,6 @@
 
 import { useLocalStorage } from '../hooks/useLocalStorage'
 import { AddSubject } from '../pages/AddSubject'
-// import { Courses } from '../pages/Courses';
 import { Home } from '../pages/Home';
 import { Outlet } from 'react-router';
 import './App.css'

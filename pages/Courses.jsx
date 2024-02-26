@@ -1,6 +1,5 @@
 import React from "react";
 
-// import {useSubject} from "../hooks/useSubject.js"
 import {NavBar, Subjects} from "../components/courses/index.js"
 import { SubjectsContext, useSubject } from "../hooks/useSubject.js";
 import "../src/App.css"

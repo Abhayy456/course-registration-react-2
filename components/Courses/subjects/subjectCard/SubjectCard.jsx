@@ -10,15 +10,16 @@ export const SubjectCard = ({ subject }) => {
         setRegistered(registeredNew);
     }
     return (
-        <div className="subject">
+        <li className="subject">
             <div className="subject__name">
                 {subject.subjectName}
             </div>
-            <div className="subject__branch">
-                {subject.subjectBranch}
-            </div>
+            
             <div className="subject__code">
                 {subject.subjectCode}
+            </div>
+            <div className="subject__branch">
+                {subject.subjectBranch}
             </div>
             <div className="subject__credits">
                 {subject.subjectCredits}
@@ -29,6 +30,6 @@ export const SubjectCard = ({ subject }) => {
             >
                 Register
             </button>
-        </div>
+        </li>
     )
 }

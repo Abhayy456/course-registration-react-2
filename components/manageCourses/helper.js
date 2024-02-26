@@ -1,7 +1,6 @@
 import { initializeRegistered, register } from "../courses/helper";
 import { RegisteredContext } from "../../hooks/useRegistered";
 export const drop = (subject) => {
-    // const subject=event.target.parentElement;
     const registered=initializeRegistered();
     let index=0;
     let totalCredits=localStorage.getItem('totalCredits');
@@ -20,8 +19,4 @@ export const drop = (subject) => {
     localStorage.setItem('registered', JSON.stringify(registered));
     console.log({registered});
     return registered;
-    // saveSubjectListInStorage();
-    // document.querySelector('.credit-box__total-credits-value').innerHTML=localStorage.getItem('totalCredits');
-    // document.querySelector('.credit-box__remaining-credits-value').innerHTML=Math.max(0,8-totalCredits);
-    // event.target.parentElement.remove();
 };

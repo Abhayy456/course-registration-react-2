@@ -1,7 +1,8 @@
-import { drop } from "./helper.js"
-import { RegisteredContext } from "../../hooks/useRegistered.js";
+import { drop } from "../../helper.js"
+import { RegisteredContext } from "../../../../hooks/useRegistered.js";
 import { useContext } from "react";
-export const RegisteredCourseCard = ({ subject }) => {
+import "./RegisteredCoursesCard.css";
+export const RegisteredCoursesCard = ({ subject }) => {
     const [registered, setRegistered] = useContext(RegisteredContext);
     const handleDrop = () => {
         const registeredNew=drop(subject);
@@ -11,15 +12,15 @@ export const RegisteredCourseCard = ({ subject }) => {
     }
     return (
         <div className="registered-course">
-            <div className="registered-course__rname">
+            <div className="registered-course__name">
                 {subject.name}
             </div>
             <div className="registered-course__branch">
                 {subject.branch}
             </div>
-            <div className="registered-course__code">
+            {/* <div className="registered-course__code">
                 {subject.code}
-            </div>
+            </div> */}
             <div className="registered-course__credits">
                 {subject.credits}
             </div>

@@ -1,0 +1,44 @@
+.login{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.login__admin{
+    text-decoration: none;
+    color: black;
+    border: solid black;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.login__admin:hover{
+    color: white;
+    background-color: black;
+}
+
+.login__admin-link:hover{
+    color: white;
+}
+
+.login__student{
+    text-decoration: none;
+    color: black;
+    border: solid black;
+    margin-right: 1rem;
+    padding: 1rem;
+    border-radius: 0.7rem;
+}
+
+.login__student:hover{
+    color: white;
+    background-color: black;
+}
+
+.login__student-link:hover{
+    color: white;
+}
+

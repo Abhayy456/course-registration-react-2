@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React from "react";
 import { Subjects } from "../subjects/Subjects";
-  
+import "./NavBar.css"
 
 export const NavBar = () => {
     return (
@@ -9,16 +9,17 @@ export const NavBar = () => {
                 <div className="nav__courses">Courses</div>
                 <div className="nav__search-bar">
                     <input
-                        className="nav__seach-input"
+                        className="nav__search-input"
                         type="text"
                         placeholder="Search Subjects"
                         aria-label="Search Bar"
                     />
+                    <button class="nav__search-button">
+                        Search
+                    </button>
                 </div>
-                <Link to={"/manageCourses"}>Manage Courses</Link>
-                {/* <Routes>
-                    <Route path="/Subjects"> <Subjects /> </Route>
-                </Routes> */}
+                <Link className="nav__manage-courses-link" to={"/manageCourses"}>Manage Courses</Link>
+                <Link to={"/"}>LogOut</Link>
             </nav>
     )
 }
