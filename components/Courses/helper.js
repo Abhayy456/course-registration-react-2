@@ -28,6 +28,10 @@ export const register = (subject) => {
         copy=[
             {
                 id: subject.subjectId,
+                name: subject.subjectName,
+                branch: subject.subjectBranch,
+                code: subject.subjectCode,
+                credits: subject.subjectCredits,
             },
         ];
         map1.set(subject.subjectId, {
@@ -47,5 +51,6 @@ export const register = (subject) => {
 
     })}
     window.localStorage.setItem("totalCredits", JSON.stringify(totalCredits));
+    window.localStorage.setItem("map1",JSON.stringify(map1));
     return copy;
 };

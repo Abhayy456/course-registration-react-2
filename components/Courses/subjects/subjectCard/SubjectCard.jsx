@@ -1,9 +1,13 @@
 import "./SubjectCard.css";
-import { register } from "./helper";
+import { register } from "../../helper";
+import { RegisteredContext } from "../../../../hooks/useRegistered";
+import { useContext, useState } from "react";
 
 export const SubjectCard = ({ subject }) => {
+    const [registered, setRegistered] = useContext(RegisteredContext);
     const handleRegister = () => {
-        register(subject);
+        const registeredNew = register(subject);
+        setRegistered(registeredNew);
     }
     return (
         <div className="subject">

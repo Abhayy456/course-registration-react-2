@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import  App  from "./src/App";
 import { AddSubject } from "./pages/AddSubject";
 import { Courses } from "./pages/Courses";
+import { ManageCourses } from "./pages/ManageCourses";
 
 export const routerLinks = {
   ADD_SUBJECT: {
@@ -17,6 +18,10 @@ export const routerLinks = {
   COURSES: {
     path: "/courses",
     element: <Courses />
+  },
+  MANAGE_COURSES: {
+    path: "/manageCourses",
+    element: <ManageCourses />
   }
 };
 export const routerConfig = [
@@ -36,6 +41,10 @@ export const routerConfig = [
         path: routerLinks.COURSES.path,
         element: routerLinks.COURSES.element,
       },
+      {
+        path: routerLinks.MANAGE_COURSES.path,
+        element: routerLinks.MANAGE_COURSES.element,
+      }
     ],
   },
 ];

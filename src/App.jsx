@@ -11,12 +11,14 @@ import {
 } from "../components/utilities/constants"
 import { SubjectsContext } from '../hooks/useSubject';
 import { Route, Routes } from 'react-router-dom';
-import { initializeRegistered } from '../components/Courses/helper';
+import { initializeRegistered } from '../components/courses/helper.js';
 import { RegisteredContext } from '../hooks/useRegistered';
+import { useState } from 'react';
 
 
 export default function App(){
-  const registered = initializeRegistered();
+  const [registered, setRegistered] = useState(initializeRegistered());
+  console.log(registered);
   const [subjects, setSubjects] = useLocalStorage(
     SUBJECTS_LOCAL_STORAGE_KEY,
     SUBJECTS_DEFAULT_INITIAL_VALUE
@@ -24,9 +26,9 @@ export default function App(){
 
   return (
     <SubjectsContext.Provider value={[subjects, setSubjects]}>
-      {/* <RegisteredContext> */}
+      <RegisteredContext.Provider value={ [registered, setRegistered] }>
         <Outlet />
-      {/* </RegisteredContext> */}
+      </RegisteredContext.Provider>
     </SubjectsContext.Provider>
   )
 }

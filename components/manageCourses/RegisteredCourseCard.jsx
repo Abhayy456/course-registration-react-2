@@ -1,0 +1,34 @@
+import { drop } from "./helper.js"
+import { RegisteredContext } from "../../hooks/useRegistered.js";
+import { useContext } from "react";
+export const RegisteredCourseCard = ({ subject }) => {
+    const [registered, setRegistered] = useContext(RegisteredContext);
+    const handleDrop = () => {
+        const registeredNew=drop(subject);
+        // {handle};
+        // handleRegister=registered;
+        setRegistered(registeredNew);
+    }
+    return (
+        <div className="registered-course">
+            <div className="registered-course__rname">
+                {subject.name}
+            </div>
+            <div className="registered-course__branch">
+                {subject.branch}
+            </div>
+            <div className="registered-course__code">
+                {subject.code}
+            </div>
+            <div className="registered-course__credits">
+                {subject.credits}
+            </div>
+            <button 
+                onClick={handleDrop}
+                className="registered-course__drop-btn"
+            >
+                Drop
+            </button>
+        </div>
+    )
+}

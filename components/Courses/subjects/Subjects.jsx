@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState} from "react";
 import "./Subjects.css";
-import {SubjectCard} from "./SubjectCard"
-import { SubjectsContext, useSubject } from "../../hooks/useSubject";
+import {SubjectCard} from "./subjectCard/SubjectCard"
+import { SubjectsContext, useSubject } from "../../../hooks/useSubject";
 
 export const Subjects = () => {
     const [subjects]=useContext(SubjectsContext);

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React from "react";
-import { Subjects } from "./Subjects";
+import { Subjects } from "../subjects/Subjects";
   
 
 export const NavBar = () => {
@@ -15,7 +15,7 @@ export const NavBar = () => {
                         aria-label="Search Bar"
                     />
                 </div>
-                <Link to={"/"}>Subjects</Link>
+                <Link to={"/manageCourses"}>Manage Courses</Link>
                 {/* <Routes>
                     <Route path="/Subjects"> <Subjects /> </Route>
                 </Routes> */}
