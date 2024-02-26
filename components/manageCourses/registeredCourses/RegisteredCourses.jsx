@@ -15,7 +15,7 @@ export const RegisteredCourses = () =>{
                 <div className="header__action-column">Action</div>
             </div>
             {registered.map((subject) => {
-                return <RegisteredCoursesCard subject={subject} />
+                return <RegisteredCoursesCard subject={subject} key={subject.id} />
             })}
         </div>
         </>
