@@ -1,7 +1,7 @@
 import { createBrowserRouter } from "react-router-dom";
 
 import { Home } from "./pages/Home";
-import  App  from "./src/App";
+import App from "./src/App";
 import { AddSubject } from "./pages/AddSubject";
 import { Courses } from "./pages/Courses";
 import { ManageCourses } from "./pages/ManageCourses";
@@ -17,12 +17,12 @@ export const routerLinks = {
   },
   COURSES: {
     path: "/courses",
-    element: <Courses />
+    element: <Courses />,
   },
   MANAGE_COURSES: {
     path: "/manageCourses",
-    element: <ManageCourses />
-  }
+    element: <ManageCourses />,
+  },
 };
 export const routerConfig = [
   {
@@ -44,7 +44,7 @@ export const routerConfig = [
       {
         path: routerLinks.MANAGE_COURSES.path,
         element: routerLinks.MANAGE_COURSES.element,
-      }
+      },
     ],
   },
 ];

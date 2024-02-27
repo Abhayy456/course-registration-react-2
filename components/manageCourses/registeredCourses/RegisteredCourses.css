@@ -1,28 +1,28 @@
-.header{
-    display: flex;
-    border: solid black;
-    border-radius: 0.8rem;
-    margin-top: 2rem;
-    height: 4rem;
-    align-items: center;
-    background-color: rgb(87, 60, 60);
-    color: white;
+.header {
+  display: flex;
+  border: solid black;
+  border-radius: 0.8rem;
+  margin-top: 2rem;
+  height: 4rem;
+  align-items: center;
+  background-color: rgb(87, 60, 60);
+  color: white;
 }
 
-.header__subject-name-column{
-    width: 20%;
-    margin-left: 1rem;;
+.header__subject-name-column {
+  width: 20%;
+  margin-left: 1rem;
 }
 
-.header__subject-branch-column{
-    width: 40%;
+.header__subject-branch-column {
+  width: 40%;
 }
 
-.header__subject-credits-column{
-    width: 20%
+.header__subject-credits-column {
+  width: 20%;
 }
 
-.header__action-column{
-    margin-right: 1rem;;
-    width: 20%;
+.header__action-column {
+  margin-right: 1rem;
+  width: 20%;
 }

@@ -63,13 +63,13 @@ button:focus-visible {
   }
 }
 
-.text-center{
+.text-center {
   display: flex;
   justify-content: center;
   margin-top: 8rem;
 }
 
-.form-fields{
+.form-fields {
   margin-top: 1rem;
   margin-left: 0rem;
 }
