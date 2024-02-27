@@ -1,0 +1,33 @@
+.registered-course {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(87, 60, 60);
+  color: white;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 0.8rem;
+  height: 3rem;
+  align-items: center;
+}
+
+.registered-course__name {
+  width: 20%;
+  margin-left: 1rem;
+}
+
+.registered-course__branch {
+  width: 40%;
+}
+
+.registered-course__credits {
+  width: 20%;
+}
+
+.registered-course__drop-btn {
+  display: table-cell;
+  vertical-align: middle;
+  cursor: pointer;
+  width: 20%;
+  margin-right: 1rem;
+  border: solid black;
+}

@@ -1,0 +1,38 @@
+.subject {
+  display: flex;
+  border-radius: 0.8rem;
+  border-color: black;
+  border: solid;
+  height: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background-color: antiquewhite;
+  font-size: 1.5rem;
+}
+
+.subject__name:hover {
+  text-decoration: underline;
+  color: red;
+}
+
+.subject__code {
+  width: 20%;
+}
+
+.subject__branch {
+  width: 20%;
+  /* margin-left: 8rem; */
+}
+
+.subject__name {
+  text-decoration: none;
+  color: black;
+  width: 20%;
+  padding-left: 2rem;
+}
+
+.subject__credits {
+  width: 20%;
+  /* margin-left: 2rem; */
+}
