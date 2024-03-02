@@ -1,6 +1,7 @@
 import { createContext, useContext } from "react";
+import { SubjectContextType } from "../types/interface";
 
-export const SubjectsContext = createContext(null);
+export const SubjectsContext = createContext<SubjectContextType | null>(null);
 
 export const useSubject = () => {
   const context = useContext(SubjectsContext);

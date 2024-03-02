@@ -1,8 +1,14 @@
 import { initializeSubject } from "./helper.js";
 
 import { ACTIONS } from "./constants.js";
+import { Subject } from "../../types/interface.js";
 
-export const subjectReducer = (state, action) => {
+export type SubjectAction = {
+  type: string;
+  payload?: string;
+};
+
+export const subjectReducer = (state: Subject, action: SubjectAction) => {
   switch (action.type) {
     case ACTIONS.CHANGE_SUBJECT_NAME:
       return { ...state, subjectName: action.payload };

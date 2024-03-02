@@ -1,3 +1,4 @@
+import React from "react";
 import { RegisteredCourses } from "../components/manageCourses/registeredCourses/RegisteredCourses";
 
 export const ManageCourses = () => {

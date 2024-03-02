@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-
+import React from "react";
 import { Home } from "./pages/Home";
 import App from "./src/App";
 import { AddSubject } from "./pages/AddSubject";
