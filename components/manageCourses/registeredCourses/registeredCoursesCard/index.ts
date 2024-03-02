@@ -1,0 +1,1 @@
+export { RegisteredCoursesCard } from "./RegisteredCoursesCard";
